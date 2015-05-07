@@ -1,10 +1,30 @@
-.hero-content {
-  background: #2f1d57;
-  padding: 100px 0; }
-  .hero-content h1 {
-    font-size: 70px;
-    margin-bottom: 50px;
-    font-weight: 300; }
+div h1 {
+  font-size: 5.625em;
+  margin-bottom: 20px;
+  font-weight: 900; }
+div h2 {
+  font-size: 3em;
+  font-weight: 300; }
+
+.slide1 {
+  background: #2f1d57 url(/images/slide1.jpg) center no-repeat;
+  background-size: 100%;
+  padding: 200px 0; }
+
+.slide2 {
+  background: #2f1d57 url(/images/slide2.jpg) center no-repeat;
+  background-size: 100%;
+  padding: 200px 0; }
+
+.slide3 {
+  background: #2f1d57 url(/images/slide3.jpg) center no-repeat;
+  background-size: 100%;
+  padding: 200px 0; }
+
+.slide4 {
+  background: #2f1d57 url(/images/slide4.jpg) center no-repeat;
+  background-size: 100%;
+  padding: 200px 0; }
 
 .selling-points {
   padding: 100px 0; }
@@ -307,7 +327,8 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   color: white;
   min-height: 100%;
   background: -webkit-radial-gradient(#2b1339, #380c77);
