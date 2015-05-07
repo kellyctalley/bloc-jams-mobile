@@ -44,10 +44,6 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
  
 // This is a cleaner way to call the controller than crowding it on the module definition.
 blocJams.controller('Landing.controller', ['$scope', function($scope) {
-  $scope.subText = "Turn the music up!";
-  $scope.subTextClicked = function() {
-     $scope.subText += '!';
-   };
 
    $scope.albumURLs = [
      '/images/album-placeholders/album-1.jpg',
