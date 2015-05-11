@@ -14,22 +14,22 @@ div .bold-h2 {
 
 .slide1 {
   background: #2f1d57 url(/images/slide1.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0; }
 
 .slide2 {
   background: #2f1d57 url(/images/slide2.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0; }
 
 .slide3 {
   background: #2f1d57 url(/images/slide3.jpg) center top no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0; }
 
 .slide4 {
   background: #2f1d57 url(/images/slide4.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0; }
 
 /* .selling-points {
@@ -344,20 +344,18 @@ td.song-number {
   /*Player Bar*/
   .player-header-nav.navbar .navbar-nav li {
     text-align: center; }
-  .player-header-nav.navbar .hero-content h1, .player-header-nav.navbar .hero-content h3 {
-    text-align: center; }
-  .player-header-nav.navbar .selling-points {
-    padding: 0; }
-    .player-header-nav.navbar .selling-points .point {
-      padding: 3em 0.75em; }
-      .player-header-nav.navbar .selling-points .point h5 {
-        height: 2.25em; }
-      .player-header-nav.navbar .selling-points .point p {
-        text-align: center;
-        font-size: 1.25em; }
-  .player-header-nav.navbar .landing-album-list {
+  .hero-slider {
+    max-width: 100%;
+    padding: 25px 0 100px 0; }
+    .hero-slider h1 {
+      font-size: 3.5em; }
+    .hero-slider h2 {
+      font-size: 1.75em; }
+    .hero-slider h3 {
+      font-size: 1em; }
+  .landing-album-list {
     /* Example class added to style the album covers for mobile */ }
-    .player-header-nav.navbar .landing-album-list .album-cover {
+    .landing-album-list .album-cover {
       position: relative;
       left: calc(50% - 200px); }
   .collection-album-container {

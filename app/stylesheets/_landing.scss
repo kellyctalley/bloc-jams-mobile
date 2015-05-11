@@ -23,25 +23,25 @@ div {
 
 .slide1 {
   background: #2F1D57 url(/images/slide1.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0;
 }
 
 .slide2 {
   background: #2F1D57 url(/images/slide2.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0;
 }
 
 .slide3 {
   background: #2F1D57 url(/images/slide3.jpg) center top no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0;
 }
 
 .slide4 {
   background: #2F1D57 url(/images/slide4.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 200px 0;
 }
  
@@ -64,6 +64,7 @@ div {
 } */
 
 .landing-album-list {
+
   .list-h2 {
     padding: 15px 0 25px 0;
   }
