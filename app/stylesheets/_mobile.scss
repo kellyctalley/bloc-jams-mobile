@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+
+  /* Landing Page and Global Styles */
+  .player-header-nav.navbar {
+    .navbar-nav {
+      li {
+        text-align: center;
+      }
+    }
+    .hero-content {
+      h1, h3 {
+        text-align: center;
+      }
+    }
+    .selling-points {
+      padding: 0;
+      .point {
+        padding: 3em 0.75em;
+        h5 {
+          height: 2.25em;
+        }
+        p {
+          text-align: center;
+          font-size: 1.25em;
+        }
+      }
+    }
+    .landing-album-list {
+      /* Example class added to style the album covers for mobile */
+      .album-cover {
+        position: relative;
+        left: calc(50% - 200px);
+      }
+    }
+  }
+
+  /* Collection View */
+
+  .collection-album-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px; /* Width of the album image. */
+  }
+
+  /*Player Bar*/
+  .player-bar {
+
+    .play-controls {
+      font-size: 1em;
+    }
+
+    .container {
+      display: block;
+    }
+
+    .left-controls {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      padding-bottom: 2.5em;
+      padding-top: 1em;
+    }
+
+    .currently-playing {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+  }
+
+
+
+}
