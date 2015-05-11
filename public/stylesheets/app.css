@@ -5,6 +5,12 @@ div h1 {
 div h2 {
   font-size: 3em;
   font-weight: 300; }
+div h3 {
+  color: black;
+  line-height: 1.25; }
+div .bold-h2 {
+  color: #2f1d57;
+  font-weight: 700; }
 
 .slide1 {
   background: #2f1d57 url(/images/slide1.jpg) center no-repeat;
@@ -17,7 +23,7 @@ div h2 {
   padding: 200px 0; }
 
 .slide3 {
-  background: #2f1d57 url(/images/slide3.jpg) center no-repeat;
+  background: #2f1d57 url(/images/slide3.jpg) center top no-repeat;
   background-size: 100%;
   padding: 200px 0; }
 
@@ -26,16 +32,25 @@ div h2 {
   background-size: 100%;
   padding: 200px 0; }
 
-.selling-points {
-  padding: 100px 0; }
-  .selling-points .point h5 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    height: 85px; }
-  .selling-points .point p {
-    font-size: 14px; }
+/* .selling-points {
+  padding: 100px 0;
+
+  .point {
+    h5 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      height: 85px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+} */
+.landing-album-list .list-h2 {
+  padding: 15px 0 25px 0; }
 
 .album-header-container {
   margin-top: 55px;
