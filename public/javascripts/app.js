@@ -308,6 +308,11 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
 // This is a cleaner way to call the controller than crowding it on the module definition.
 blocJams.controller('Landing.controller', ['$scope', function($scope) {
 
+  $scope.albums = [{
+    "url": "whatever the url is",
+    "title": "whatever the title is"
+  }]
+  
    $scope.albumURLs = [
      '/images/album-placeholders/album-1.jpg',
      '/images/album-placeholders/album-2.jpg',

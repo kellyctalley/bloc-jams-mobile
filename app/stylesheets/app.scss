@@ -4,7 +4,6 @@
 @import "player_bar";
 @import "buttons";
 @import "profile";
-@import "mobile";
 
 
 html {
@@ -51,5 +50,8 @@ body.landing .navbar {
     }
   }
 }
+
+@import "mobile";
+
 
 
