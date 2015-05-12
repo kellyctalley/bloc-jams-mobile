@@ -30,7 +30,19 @@
         </div>
 
         <!--Collapse Menu-->
-        <div class="nav navbar-right" ng-controller="CollapseMenu">
+        <div class="mobile-menu">
+          <button class="btn btn-default visible-xs" ng-click="isCollapsed = !isCollapsed">
+            <i ng-class="{'fa fa-angle-down fa-2x' : !isCollapsed, 'fa fa-angle-up fa-2x' : isCollapsed}"></i>
+          </button>
+          <ul class="nav navbar-nav navbar-right" collapse="isCollapsed">
+            <li><a ui-sref='album'>Playlists</a></li>
+            <li><a ui-sref='collection'>Library</a></li>
+            <li><a ui-sref='profile'>Profile</a></li>
+          </ul>
+        </div>
+
+
+        <!--<div class="nav navbar-right" ng-controller="CollapseMenu">
           <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
 
         <ul class="nav navbar-nav navbar-right" collapse="isCollapsed">
@@ -39,7 +51,7 @@
           <li><a ui-sref='profile'>Profile</a></li>
         </ul>
 
-      </div>
+      </div>-->
 
       </div>
     </nav>

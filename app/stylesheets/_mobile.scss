@@ -34,6 +34,16 @@
     }
   }
 
+  .mobile-menu {
+    button {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      background-color: #715596;
+      color: #fff;
+    }
+  }
+
   /* Collection View */
 
   .collection-album-container {
@@ -69,7 +79,17 @@
       margin-left: auto;
       margin-right: auto;
       width: 75%;
+
+      .song-name {
+        top: -30px;
+      }
     }
+
+    .artist-name {
+      top: 20px;
+    }
+
+
 
   }
 

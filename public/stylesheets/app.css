@@ -389,6 +389,12 @@ body.landing .navbar {
     .landing-album-list .album-cover {
       position: relative;
       left: calc(50% - 200px); }
+  .mobile-menu button {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    background-color: #715596;
+    color: white; }
   .collection-album-container {
     position: relative;
     margin-left: auto;
@@ -411,7 +417,11 @@ body.landing .navbar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%; } }
+    width: 75%; }
+    .player-bar .currently-playing .song-name {
+      top: -30px; }
+  .player-bar .artist-name {
+    top: 20px; } }
 
 
 /*# sourceMappingURL=app.css.map*/
