@@ -282,7 +282,7 @@ if (document.URL.match(/\/album.html/)) {
   ]
  };
  
-blocJams = angular.module('BlocJams', ['ui.router']);
+blocJams = angular.module('BlocJams', ['ui.router', 'ui.bootstrap']);
 blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
  
@@ -384,6 +384,10 @@ blocJams.controller('PlayerBar.controller', ['$scope', 'SongPlayer', function($s
       $scope.playTime = time;
     });
   });
+}]);
+
+blocJams.controller('CollapseMenu', ['$scope', function($scope) {
+  $scope.isCollapsed = false;
 }]);
  
 blocJams.service('SongPlayer', ['$rootScope', function($rootScope) {
