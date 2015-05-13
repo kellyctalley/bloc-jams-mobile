@@ -1,14 +1,14 @@
-div h1 {
+.hero-slider h1 {
   font-size: 5.625em;
   margin-bottom: 20px;
   font-weight: 900; }
-div h2 {
+.hero-slider h2 {
   font-size: 3em;
   font-weight: 300; }
-div h3 {
+.hero-slider h3 {
   color: black;
   line-height: 1.25; }
-div .bold-h2 {
+.hero-slider .bold-h2 {
   color: #2f1d57;
   font-weight: 700; }
 

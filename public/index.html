@@ -34,11 +34,13 @@
           <button class="btn btn-default visible-xs" ng-click="isCollapsed = !isCollapsed">
             <i ng-class="{'fa fa-angle-down fa-2x' : !isCollapsed, 'fa fa-angle-up fa-2x' : isCollapsed}"></i>
           </button>
-          <ul class="nav navbar-nav navbar-right" collapse="isCollapsed">
+          <div class="navbar-collapse"  collapse="!isCollapsed">
+          <ul class="nav navbar-nav navbar-right">
             <li><a ui-sref='album'>Playlists</a></li>
             <li><a ui-sref='collection'>Library</a></li>
             <li><a ui-sref='profile'>Profile</a></li>
           </ul>
+        </div>
         </div>
 
 
