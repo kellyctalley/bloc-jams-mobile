@@ -46,9 +46,51 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
 blocJams.controller('Landing.controller', ['$scope', function($scope) {
 
   $scope.albums = [{
-    "url": "whatever the url is",
-    "title": "whatever the title is"
-  }]
+      url: '/images/album-placeholders/album-1.jpg',
+      title: 'Album 1',
+      artist: 'Artist 1'
+    },
+    {
+      url: '/images/album-placeholders/album-2.jpg',
+      title: 'Album 2',
+      artist: 'Artist 2'
+    },
+    {
+      url: '/images/album-placeholders/album-3.jpg',
+      title: 'Album 3',
+      artist: 'Artist 3'
+    },
+    {
+      url: '/images/album-placeholders/album-4.jpg',
+      title: 'Album 4',
+      artist: 'Artist 4'
+    },
+    {
+      url: '/images/album-placeholders/album-5.jpg',
+      title: 'Album 5',
+      artist: 'Artist 5'
+    },
+    {
+      url: '/images/album-placeholders/album-6.jpg',
+      title: 'Album 6',
+      artist: 'Artist 6'
+    },
+    {
+      url: '/images/album-placeholders/album-7.jpg',
+      title: 'Album 7',
+      artist: 'Artist 7'
+    },
+    {
+      url: '/images/album-placeholders/album-8.jpg',
+      title: 'Album 8',
+      artist: 'Artist 8'
+    },
+    {
+      url: '/images/album-placeholders/album-9.jpg',
+      title: 'Album 9',
+      artist: 'Artist 9'
+    }
+  ];
   
    $scope.albumURLs = [
      '/images/album-placeholders/album-1.jpg',

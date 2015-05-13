@@ -60,8 +60,11 @@
   <div class="landing-album-list container">
     <h2 class="list-h2">What's new this week:</h2>
     <div class="row">
-      <div class="col-md-4 album-cover" ng-repeat="albumURL in albumURLs">
-        <img ng-src="{{albumURL}}">
-      </div>
+      <div class="col-md-4 album-cover front" ng-repeat="album in albums">
+        <figure>
+        <img ng-src="{{album.url}}">
+        <figcaption>{{album.title}}<br>
+        {{album.artist}}</figcaption>
+      </figure>
     </div>
 </div>
