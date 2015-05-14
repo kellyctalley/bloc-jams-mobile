@@ -52,7 +52,9 @@
 .landing-album-list .list-h2 {
   padding: 15px 0 25px 0; }
 .landing-album-list .flipper {
-  perspective: 1200px; }
+  perspective: 1200px;
+  width: 33%;
+  display: inline-block; }
 .landing-album-list figure {
   position: relative;
   transform-style: preserve-3d;
@@ -417,9 +419,11 @@ body.landing .navbar {
     .landing-album-list .album-cover {
       position: relative;
       left: calc(50% - 200px); }
-    .landing-album-list .col-center {
-      float: none;
-      margin: 0 auto; }
+    .landing-album-list .flipper {
+      display: block;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto; }
   .mobile-menu button {
     position: absolute;
     right: 5%;
