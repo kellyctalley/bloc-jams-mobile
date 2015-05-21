@@ -1,16 +1,21 @@
-.hero-slider h1 {
-  font-size: 5.625em;
-  margin-bottom: 20px;
-  font-weight: 900; }
-.hero-slider h2 {
-  font-size: 3em;
-  font-weight: 300; }
-.hero-slider h3 {
-  color: black;
-  line-height: 1.25; }
-.hero-slider .bold-h2 {
-  color: #2f1d57;
-  font-weight: 700; }
+.hero-slider {
+  max-width: 100%;
+  margin: 0 auto; }
+  .hero-slider img {
+    width: 100%; }
+  .hero-slider h1 {
+    font-size: 5.625em;
+    margin-bottom: 20px;
+    font-weight: 900; }
+  .hero-slider h2 {
+    font-size: 3em;
+    font-weight: 300; }
+  .hero-slider h3 {
+    color: black;
+    line-height: 1.25; }
+  .hero-slider .bold-h2 {
+    color: #2f1d57;
+    font-weight: 700; }
 
 .slide1 {
   background: #2f1d57 url(/images/slide1.jpg) center no-repeat;

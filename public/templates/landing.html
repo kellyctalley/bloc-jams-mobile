@@ -1,4 +1,10 @@
-<div class="slide1 hero-slider">
+<section class="hero-slider" ng-controller="PhotoSlides">
+  <div class="slider-container" ng-repeat="slide in slides">
+    <img ng-src="{{slide.url}}">
+  </div>
+</section>
+
+<!--<div class="slide1 hero-slider">
   <div class="container">
       <div class="col-xs-6 fadeIn">
         <h1>BLOC JAMS</h1>
@@ -38,7 +44,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
 <!--<div class="selling-points container">
   <div class="row">
