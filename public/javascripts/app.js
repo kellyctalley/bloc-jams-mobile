@@ -427,26 +427,53 @@ blocJams.controller('CollapseMenu', ['$scope', function($scope) {
 
 //Slider Controller
 blocJams.controller('PhotoSlides', ['$scope', function($scope) {
+  // TODO: create css classes
+  // TODO: leverage css3 transitions instead of JS animations
+  var activeSlideIndex = null; // index of the slide that is currently active
+
+  $scope.next = function () {
+    // set current active one to false
+    $scope.slides[activeSlideIndex].active = false;
+
+    // roll over to first slide when we get to the end
+    if (activeSlideIndex > $scope.slides.length) {
+      activeSlideIndex = 0;
+    } else {
+      activeSlideIndex++;
+    }
+
+    $scope.slides[activeSlideIndex].active = true;
+  };
+
+  $scope.previous = function () {
+
+  };
+
+  // add active and base class to all of these
   $scope.slides = [
     {
     url: '/images/slide1.jpg',
     head: 'head1',
-    text: 'this gal is wearing headphones'
+    text: 'this gal is wearing headphones',
+    active: true,
+    className: "slide regular-header"
     },
     {
     url: '/images/slide2.jpg',
     head: 'head 2',
-    text: 'this guy is getting down'
+    text: 'this guy is getting down',
+    active: false,
+    className: "slide bigger-header"
     },
     {
     url: '/images/slide3.jpg',
     head: 'head3',
-    text: 'i like to relax to music'
+    text: 'i like to relax to music and stare off into the distance'
     },
     {
     url: '/images/slide4.jpg',
     head: 'head4',
-    text: 'oh, look. music on my phone.'
+    text: 'my phone plays music, cause i am fancy.'
     }
   ];
 
