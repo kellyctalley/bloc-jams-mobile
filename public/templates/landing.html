@@ -1,13 +1,9 @@
 <section class="hero-slider" ng-controller="PhotoSlides">
-  <div class="slider-container" ng-repeat="slide in slides">
-    <!-- dynamically adding 'active-slide' if the slide is active-->
-    <div ng-class="{
-      'slide.active': 'active-slide'
-    }" class="{{slide.className}}"> <!-- passing in a default class for the slide : for bigger header/smaller header-->
-      <img ng-src="{{slide.url}}">
-    </div>
+  <div class="photo-slider wrapper">
+      <img ng-repeat="slide in slides" class="slide" ng-hide="!isActiveIndex($index)" ng-src="{{slide.url}}">
   </div>
   <!-- previous/next buttons which will use ng-click on the scope methods -->
+
 </section>
 
 <!--<div class="slide1 hero-slider">
