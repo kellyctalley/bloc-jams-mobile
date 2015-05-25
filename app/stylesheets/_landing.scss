@@ -4,71 +4,51 @@
 
   img {
     width: 100%;
+    max-height: 1200px;
   }
 
-  h1 {
-    font-size: 5.625em;
-    margin-bottom: 20px;
-    font-weight: 900;
+}
+
+.arrow-slide {
+  position: absolute;
+  z-index: 1002;
+  display: block;
+  top: 50%;
+  margin-top: -35px;
+  width: 36px;
+  height: 80px;
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    color: white;
+    opacity: 0.5;
   }
 
-  h2 {
-    font-size: 3em;
-    font-weight: 300;
+  &.prev-slide {
+    left: 20px;
   }
 
-  h3 {
-    color: black;
-    line-height: 1.25;
-  }
-
-  .bold-h2 {
-    color: #2F1D57;
-    font-weight: 700;
+  &.next-slide {
+    right: 20px;
   }
 }
 
-.slide1 {
-  background: #2F1D57 url(/images/slide1.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-}
-
-.slide2 {
-  background: #2F1D57 url(/images/slide2.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-}
-
-.slide3 {
-  background: #2F1D57 url(/images/slide3.jpg) center top no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-}
-
-.slide4 {
-  background: #2F1D57 url(/images/slide4.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-}
- 
-/* .selling-points {
-  padding: 100px 0;
-
-  .point {
-    h5 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-align: center;
-      height: 85px;
-    }
-
-    p {
-      font-size: 14px;
-    }
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
   }
-} */
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideRight {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+}
 
 .landing-album-list {
 
@@ -112,53 +92,3 @@
 
 .flipper:hover figure { transform: rotateY(.5turn); }
 .flipper:hover figure figcaption { opacity: 1; }
-
-
-.fadeIn{
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn; 
-
-  animation-duration: 1.5s; 
-  -webkit-animation-duration: 1.5s;
-
-  animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out;   
-
-  visibility: visible !important; 
-}
-
-@keyframes fadeIn {
-  0% {
-    transform: scale(0);
-    opacity: 0.0;   
-  }
-  60% {
-    transform: scale(1.1);  
-  }
-  80% {
-    transform: scale(0.9);
-    opacity: 1; 
-  } 
-  100% {
-    transform: scale(1);
-    opacity: 1; 
-  }   
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    -webkit-transform: scale(0);
-    opacity: 0.0;   
-  }
-  60% {
-    -webkit-transform: scale(1.1);
-  }
-  80% {
-    -webkit-transform: scale(0.9);
-    opacity: 1; 
-  } 
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1; 
-  }   
-}

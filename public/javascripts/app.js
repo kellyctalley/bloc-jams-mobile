@@ -431,23 +431,27 @@ blocJams.controller('PhotoSlides', ['$scope', function($scope) {
   $scope.slides = [
     {
     url: '/images/slide1.jpg',
-    head: 'head1',
-    text: 'this gal is wearing headphones',
+    head: 'BLOC JAMS',
+    text: 'Turn the music up!',
+    id: 'slide1'
     },
     {
     url: '/images/slide2.jpg',
-    head: 'head 2',
-    text: 'this guy is getting down',
+    head: 'Choose your music',
+    text: 'The world is full of music, why should you have to listen to music that someone else chose?',
+    id: 'slide2'
     },
     {
     url: '/images/slide3.jpg',
-    head: 'head3',
-    text: 'i like to relax to music and stare off into the distance'
+    head: 'Unlimited, streaming, ad-free',
+    text: 'No arbitrary limits. No distractions.',
+    id: 'slide3'
     },
     {
     url: '/images/slide4.jpg',
-    head: 'head4',
-    text: 'my phone plays music, cause i am fancy.'
+    head: 'Mobile enabled',
+    text: 'Listen to your music on the go. This streaming service is available on all mobile platforms.',
+    id: 'slide4'
     }
   ];
 
@@ -459,6 +463,14 @@ blocJams.controller('PhotoSlides', ['$scope', function($scope) {
 
   $scope.isActiveIndex = function (index) {
     return $scope.activeIndex === index;
+  };
+
+  $scope.prevSlide = function () {
+    $scope.activeIndex = ($scope.activeIndex < $scope.slides.length - 1) ? ++$scope.activeIndex : 0;
+  };
+
+  $scope.nextSlide = function () {
+    $scope.activeIndex = ($scope.activeIndex > 0) ? --$scope.activeIndex : $scope.slides.length - 1;
   };
 
 }]);

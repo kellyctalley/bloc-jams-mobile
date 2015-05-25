@@ -2,58 +2,39 @@
   max-width: 100%;
   margin: 0 auto; }
   .hero-slider img {
-    width: 100%; }
-  .hero-slider h1 {
-    font-size: 5.625em;
-    margin-bottom: 20px;
-    font-weight: 900; }
-  .hero-slider h2 {
-    font-size: 3em;
-    font-weight: 300; }
-  .hero-slider h3 {
-    color: black;
-    line-height: 1.25; }
-  .hero-slider .bold-h2 {
-    color: #2f1d57;
-    font-weight: 700; }
+    width: 100%;
+    max-height: 1200px; }
 
-.slide1 {
-  background: #2f1d57 url(/images/slide1.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0; }
+.arrow-slide {
+  position: absolute;
+  z-index: 1002;
+  display: block;
+  top: 50%;
+  margin-top: -35px;
+  width: 36px;
+  height: 80px;
+  cursor: pointer;
+  color: white; }
+  .arrow-slide:hover {
+    color: white;
+    opacity: 0.5; }
+  .arrow-slide.prev-slide {
+    left: 20px; }
+  .arrow-slide.next-slide {
+    right: 20px; }
 
-.slide2 {
-  background: #2f1d57 url(/images/slide2.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0; }
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
 
-.slide3 {
-  background: #2f1d57 url(/images/slide3.jpg) center top no-repeat;
-  background-size: cover;
-  padding: 200px 0; }
+  100% {
+    transform: translate3d(0, 0, 0); } }
 
-.slide4 {
-  background: #2f1d57 url(/images/slide4.jpg) center no-repeat;
-  background-size: cover;
-  padding: 200px 0; }
+.slideRight {
+  animation-name: slideInRight;
+  animation-duration: 1s; }
 
-/* .selling-points {
-  padding: 100px 0;
-
-  .point {
-    h5 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-align: center;
-      height: 85px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
-} */
 .landing-album-list .list-h2 {
   padding: 15px 0 25px 0; }
 .landing-album-list .flipper {
@@ -86,47 +67,6 @@
 
 .flipper:hover figure figcaption {
   opacity: 1; }
-
-.fadeIn {
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
-  visibility: visible !important; }
-
-@keyframes fadeIn {
-  0% {
-    transform: scale(0);
-    opacity: 0; }
-
-  60% {
-    transform: scale(1.1); }
-
-  80% {
-    transform: scale(0.9);
-    opacity: 1; }
-
-  100% {
-    transform: scale(1);
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-
-  60% {
-    -webkit-transform: scale(1.1); }
-
-  80% {
-    -webkit-transform: scale(0.9);
-    opacity: 1; }
-
-  100% {
-    -webkit-transform: scale(1);
-    opacity: 1; } }
 
 .album-header-container {
   margin-top: 55px;
