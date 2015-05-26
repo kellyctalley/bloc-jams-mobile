@@ -164,31 +164,38 @@ blocJams.controller('CollapseMenu', ['$scope', function($scope) {
 
 //Slider Controller
 blocJams.controller('PhotoSlides', ['$scope', function($scope) {
+  /*$scope.useSmallImages = false;
+
+  var match = window.matchMedia("(max-width: 720px)");
+
+  match.addListener(function (query) {
+    useSmallImages = query.matches;
+  });*/
 
   $scope.slides = [
     {
     url: '/images/slide1.jpg',
+    small: '/images/slide1-sm.jpg',
     head: 'BLOC JAMS',
     text: 'Turn the music up!',
-    id: 'slide1'
     },
     {
     url: '/images/slide2.jpg',
+    small: '/images/slide2-sm.jpg',
     head: 'Choose your music',
     text: 'The world is full of music, why should you have to listen to music that someone else chose?',
-    id: 'slide2'
     },
     {
     url: '/images/slide3.jpg',
+    small: '/images/slide3-sm.jpg',
     head: 'Unlimited, streaming, ad-free',
     text: 'No arbitrary limits. No distractions.',
-    id: 'slide3'
     },
     {
     url: '/images/slide4.jpg',
+    small: '/images/slide4-sm.jpg',
     head: 'Mobile enabled',
     text: 'Listen to your music on the go. This streaming service is available on all mobile platforms.',
-    id: 'slide4'
     }
   ];
 

@@ -23,6 +23,9 @@
   .arrow-slide.next-slide {
     right: 20px; }
 
+.photo-slider-sm {
+  display: none; }
+
 @keyframes slideInRight {
   0% {
     transform: translate3d(100%, 0, 0);
@@ -355,37 +358,7 @@ td.song-number {
 .no-right-gutter {
   padding-right: 0px; }
 
-html {
-  height: 100%; }
-
-body {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  color: white;
-  min-height: 100%;
-  background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77);
-  padding-bottom: 150px; }
-
-body.landing {
-  background: #5b5579;
-  padding-bottom: 0; }
-
-body.landing .navbar {
-  margin-bottom: 0; }
-
-.player-header-nav {
-  background-color: rgba(123, 70, 163, 0.9); }
-  .player-header-nav .navbar-nav a {
-    line-height: 45px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.2; }
-    .player-header-nav .navbar-nav a:hover {
-      color: rgba(123, 70, 163, 0.9); }
-
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
   /* Landing Page and Global Styles */
   /* Collection View */
   /*Player Bar*/
@@ -394,12 +367,10 @@ body.landing .navbar {
   .hero-slider {
     max-width: 100%;
     padding: 25px 0 100px 0; }
-    .hero-slider h1 {
-      font-size: 3.5em; }
-    .hero-slider h2 {
-      font-size: 1.75em; }
-    .hero-slider h3 {
-      font-size: 1em; }
+  .photo-slider-lg {
+    display: none; }
+  .photo-slider-sm {
+    display: block; }
   .landing-album-list {
     /* Example class added to style the album covers for mobile */ }
     .landing-album-list .album-cover {
@@ -443,6 +414,47 @@ body.landing .navbar {
       top: -30px; }
   .player-bar .artist-name {
     top: 20px; } }
+
+/*
+.slide-1 {
+  background: url()
+}
+
+@media (max-width: 720px) {
+  .slide-1 {
+    background: url()
+  }
+}
+*/
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: white;
+  min-height: 100%;
+  background: -webkit-radial-gradient(#2b1339, #380c77);
+  background: radial-gradient(#2b1339, #380c77);
+  padding-bottom: 150px; }
+
+body.landing {
+  background: #5b5579;
+  padding-bottom: 0; }
+
+body.landing .navbar {
+  margin-bottom: 0; }
+
+.player-header-nav {
+  background-color: rgba(123, 70, 163, 0.9); }
+  .player-header-nav .navbar-nav a {
+    line-height: 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2; }
+    .player-header-nav .navbar-nav a:hover {
+      color: rgba(123, 70, 163, 0.9); }
 
 
 /*# sourceMappingURL=app.css.map*/

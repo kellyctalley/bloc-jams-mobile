@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* Landing Page and Global Styles */
   .player-header-nav.navbar {
@@ -12,18 +12,14 @@
   .hero-slider {
     max-width: 100%;
     padding: 25px 0 100px 0;
+  }
 
-    h1{
-      font-size: 3.5em;
-    }
+  .photo-slider-lg {
+    display: none;
+  }
 
-    h2 {
-      font-size: 1.75em;
-    }
-
-    h3 {
-      font-size: 1em;
-    }
+  .photo-slider-sm {
+    display: block;
   }
 
   .landing-album-list {

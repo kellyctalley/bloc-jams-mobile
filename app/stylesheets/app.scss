@@ -4,7 +4,19 @@
 @import "player_bar";
 @import "buttons";
 @import "profile";
+@import "mobile";
 
+/*
+.slide-1 {
+  background: url()
+}
+
+@media (max-width: 720px) {
+  .slide-1 {
+    background: url()
+  }
+}
+*/
 
 html {
     height: 100%;
@@ -52,7 +64,6 @@ body.landing .navbar {
   }
 }
 
-@import "mobile";
 
 
 
