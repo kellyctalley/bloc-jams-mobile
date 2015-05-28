@@ -10,9 +10,6 @@
   z-index: 1002;
   display: block;
   top: 50%;
-  margin-top: -35px;
-  width: 36px;
-  height: 80px;
   cursor: pointer;
   color: white; }
   .arrow-slide:hover {
@@ -22,9 +19,6 @@
     left: 20px; }
   .arrow-slide.next-slide {
     right: 20px; }
-
-.photo-slider-sm {
-  display: none; }
 
 @keyframes slideInRight {
   0% {
@@ -365,12 +359,15 @@ td.song-number {
   .player-header-nav.navbar .navbar-nav li {
     text-align: center; }
   .hero-slider {
-    max-width: 100%;
-    padding: 25px 0 100px 0; }
-  .photo-slider-lg {
-    display: none; }
-  .photo-slider-sm {
-    display: block; }
+    max-width: 100%; }
+  .arrow-slide {
+    top: 45%; }
+    .arrow-slide i {
+      font-size: 3em; }
+    .arrow-slide.prev-slide {
+      left: 10px; }
+    .arrow-slide.next-slide {
+      right: 10px; }
   .landing-album-list {
     /* Example class added to style the album covers for mobile */ }
     .landing-album-list .album-cover {

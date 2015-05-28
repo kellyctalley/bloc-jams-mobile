@@ -162,40 +162,55 @@ blocJams.controller('CollapseMenu', ['$scope', function($scope) {
 }]);
 
 
+blocJams.controller('ScreenSize', ['$scope', function($scope) {
+  
+  $scope.mobile = screenSize.is('xs, sm');
+}]);
+
+
 //Slider Controller
 blocJams.controller('PhotoSlides', ['$scope', function($scope) {
-  /*$scope.useSmallImages = false;
+  /* $scope.useSmallImages = false;
 
-  var match = window.matchMedia("(max-width: 720px)");
+  var match = window.matchMedia("(max-width: 800px)");
 
   match.addListener(function (query) {
     useSmallImages = query.matches;
   });*/
+
+  var mql = window.matchMedia("(min-width: 800px)");
+
+  if (mql.matches) {
+    $scope.desktop = true;
+  } else {
+    $scope.desktop = false;
+  }
+
 
   $scope.slides = [
     {
     url: '/images/slide1.jpg',
     small: '/images/slide1-sm.jpg',
     head: 'BLOC JAMS',
-    text: 'Turn the music up!',
+    text: 'Turn the music up!'
     },
     {
     url: '/images/slide2.jpg',
     small: '/images/slide2-sm.jpg',
     head: 'Choose your music',
-    text: 'The world is full of music, why should you have to listen to music that someone else chose?',
+    text: 'The world is full of music, why should you have to listen to music that someone else chose?'
     },
     {
     url: '/images/slide3.jpg',
     small: '/images/slide3-sm.jpg',
     head: 'Unlimited, streaming, ad-free',
-    text: 'No arbitrary limits. No distractions.',
+    text: 'No arbitrary limits. No distractions.'
     },
     {
     url: '/images/slide4.jpg',
     small: '/images/slide4-sm.jpg',
     head: 'Mobile enabled',
-    text: 'Listen to your music on the go. This streaming service is available on all mobile platforms.',
+    text: 'Listen to your music on the go. This streaming service is available on all mobile platforms.'
     }
   ];
 

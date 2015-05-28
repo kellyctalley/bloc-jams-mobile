@@ -11,15 +11,22 @@
 
   .hero-slider {
     max-width: 100%;
-    padding: 25px 0 100px 0;
   }
 
-  .photo-slider-lg {
-    display: none;
-  }
+  .arrow-slide {
+    top: 45%;
 
-  .photo-slider-sm {
-    display: block;
+    i {
+      font-size: 3em;
+    }
+
+    &.prev-slide {
+      left: 10px;
+    }
+
+    &.next-slide {
+      right: 10px;
+    }
   }
 
   .landing-album-list {

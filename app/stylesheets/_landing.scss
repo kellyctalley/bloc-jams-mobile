@@ -14,9 +14,6 @@
   z-index: 1002;
   display: block;
   top: 50%;
-  margin-top: -35px;
-  width: 36px;
-  height: 80px;
   cursor: pointer;
   color: white;
 
@@ -32,10 +29,6 @@
   &.next-slide {
     right: 20px;
   }
-}
-
-.photo-slider-sm {
-  display: none;
 }
 
 @keyframes slideInRight {

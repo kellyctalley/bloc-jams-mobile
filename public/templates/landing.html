@@ -1,17 +1,19 @@
 <section class="hero-slider" ng-controller="PhotoSlides">
-  <div class="photo-slider-lg">
-      <img ng-repeat="slide in slides" class="slide-lg slideRight" ng-hide="!isActiveIndex($index)" ng-src="{{slide.url}}">
+  <div class="photo-slider" ng-repeat="slide in slides" >
+      <img class="slide-img slideRight" ng-if="desktop" ng-hide="!isActiveIndex($index)" ng-src="{{slide.url}}">
+      <img class="slide-img slideRight" ng-if="!desktop" ng-hide="!isActiveIndex($index)" ng-src="{{slide.small}}">
+
 
       <a class="arrow-slide prev-slide" href="#" ng-click="nextSlide()"><i class="fa fa-angle-left fa-5x"></i></a>
       <a class="arrow-slide next-slide" href="#" ng-click="prevSlide()"><i class="fa fa-angle-right fa-5x"></i></a>
   </div>
 
-  <div class="photo-slider-sm">
+  <!--<div class="photo-slider-sm">
       <img ng-repeat="slide in slides" class="slide-lg slideRight" ng-hide="!isActiveIndex($index)" ng-src="{{slide.small}}">
 
       <a class="arrow-slide prev-slide" href="#" ng-click="nextSlide()"><i class="fa fa-angle-left fa-5x"></i></a>
       <a class="arrow-slide next-slide" href="#" ng-click="prevSlide()"><i class="fa fa-angle-right fa-5x"></i></a>
-  </div> 
+  </div> -->
 </section>
 
 <!--<div class="slide1 hero-slider">
